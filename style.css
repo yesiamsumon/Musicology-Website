@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: #cecece; */
+  text-decoration: none;
+  list-style: none;
+  font-family: "Nunito", sans-serif;
+}
+.container {
+  padding: 60px;
+}
+.btn {
+  width: 250px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background: #e8631c;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.btn1 {
+  padding: 10px 120px;
+  border: none;
+  outline: none;
+  background: #303030;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.btn2 {
+  padding: 10px 80px;
+  border: none;
+  outline: none;
+  background: #303030;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.btn3 {
+  padding: 10px 40px;
+  border: none;
+  outline: none;
+  background: #303030;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+#close-menu {
+  display: none;
+}
+.head-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.head-title h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 30px 0;
+}
+.head-title p {
+  width: 40%;
+  text-align: center;
+}
+.header {
+  /* position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%; */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  color: #fff;
+}
+.header img {
+  height: 40px;
+}
+.header .search {
+  height: 25px;
+}
+.header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.header nav ul li a {
+  padding: 10px 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* head design */
+
+.head {
+  border-top: 30px solid #e8631c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 40px;
+  color: #fff;
+  background: url("./images/topbg.png");
+  background-position: right;
+  background-size: cover;
+}
+.head h1 {
+  font-size: 5rem;
+  margin-top: 10%;
+  /* width: 45%; */
+}
+.head p {
+  width: 45%;
+}
+
+/* product desing */
+.product {
+  background: #e8631c;
+  color: #fff;
+  position: relative;
+  z-index: -2;
+}
+.product::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("./images/Shape.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(-30%);
+  background-size: cover;
+  z-index: -1;
+}
+.productbox,
+.pricing-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 30px 96px;
+  color: #fff;
+}
+.productbox .box {
+  background: #303030;
+  flex: 1 0 250px;
+  text-align: center;
+  border-radius: 10px;
+}
+.productbox .box .boxtext {
+  padding: 10px 20px;
+}
+.productbox .box img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* pricing desing  */
+.pricing {
+  background: #303030;
+  color: #fff;
+  position: relative;
+  z-index: -2;
+}
+.pricing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("./images/Shape1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(-30%);
+  background-size: cover;
+  color: #fff;
+  z-index: -1;
+}
+.pricing-box .box {
+  background: #e8631c;
+  flex: 1 0 100px;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.pricing-box .box img {
+  width: 70px;
+}
+.pricing-box .box h1 {
+  font-size: 2rem;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+/* amazing dance  */
+.amazing-dance {
+  display: flex;
+  flex-wrap: wrap;
+}
+.amazing-dance .adance {
+  flex: 1 0 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #e8631c;
+  color: #fff;
+}
+.amazing-dance .adance img {
+  height: 100%;
+  width: 100%;
+}
+.amazing-dance .adance-text {
+  margin: 0 auto;
+  width: 270px;
+}
+.adance-text h1 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.adance-text p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+.a-dance2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* statistics design */
+.statistics {
+  background: #303030;
+  color: #fff;
+}
+.statis-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 25px;
+  flex-wrap: wrap;
+}
+.sdetails-box {
+  margin: 25px;
+  flex: 1 1 20%;
+  text-align: center;
+}
+.sdetails-box h1 {
+  font-size: 2rem;
+}
+.sdetails-box p {
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+
+/* simon design  */
+
+.simon-bg {
+  background: url("./images/herbert.png");
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  z-index: -1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.simon-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("./images/Shape10.png");
+  opacity: 0.5;
+  z-index: -2;
+}
+.simon-text {
+  width: 250px;
+  text-align: center;
+}
+.simon-text P {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+.simon-text h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+/* subscribe design  */
+.subscribe {
+  background: #e8631c;
+  color: #fff;
+}
+.input {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input input {
+  width: 25%;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+}
+
+/* footer design  */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 30px;
+  background: #303030;
+  color: #fff;
+}
+.footer .social-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer .social-icons a {
+  margin: 0 5px;
+  background: #fff;
+  padding: 10px;
+  color: #000;
+  border-radius: 50%;
+}
+.footer .social-icons a i {
+  font-size: 25px;
+}
+
+.footer-box {
+  flex: 1 0 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.footer-box1 {
+  flex-basis: 35%;
+}
+.footer-box p {
+  width: 70%;
+  margin: 18px 0;
+}
+.social-icons2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+.social-icons2 a {
+  color: #fff;
+}
+@media screen and (max-width: 900px) {
+  .input {
+    flex-direction: column;
+  }
+  .input input {
+    margin-bottom: 10px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .nav-toggle {
+    display: block;
+  }
+  #close-menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    font-size: 40px;
+    left: 30px;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    z-index: -2;
+    transition: all 0.5s;
+    padding: 50px 0;
+  }
+  nav.active {
+    width: 50%;
+    z-index: 1;
+    transition: all 1s;
+  }
+  .header nav ul {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header nav ul li {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .amazing-dance .adance {
+    padding: 20px;
+  }
+  .head h1 {
+    font-size: 3rem;
+    margin-top: 0;
+  }
+  .btn {
+    width: 200px;
+  }
+  .btn1 {
+    padding: 10px 70px;
+  }
+  .container {
+    padding: 0;
+  }
+  .head-title h1 {
+    font-size: 2rem;
+  }
+  .adance-text h1 {
+    font-size: 2rem;
+  }
+}
